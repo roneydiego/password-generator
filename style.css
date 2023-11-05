@@ -1,0 +1,171 @@
+.header {
+    background-color: #112D4E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    color: #DBE2EF;
+    font-size: 1.5rem;
+}
+.makeItBlue {
+    color: #3F72AF;
+}
+
+.login, .register {
+    text-decoration: none;
+    color: #DBE2EF;
+    font-size: small;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #F9F7F7;    
+}
+
+.charTypes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.password {
+    height: fit-content;
+    width:100%;
+    text-align: center;
+    background-color: #3F72AF;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #F9F7F7;
+    border-radius: 10px 10px 0 0;
+}
+
+.copyClipboard {
+    width: 50px;
+    cursor: pointer;
+}
+
+.copyClipboard:hover {
+    width: 55px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.copiedFeedback {
+    background-color: rgb(63, 163, 63);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0.8;
+    margin-bottom: 65px;
+}
+
+.generatedPass {
+    max-width: 80vw;
+    word-wrap: break-word;
+}
+
+.setPassLen {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.charOptions {
+    display: flex;
+    padding: 0 20px;
+    font-size: medium;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.passArea {
+    background-color: #DBE2EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    color: #112D4E;
+    font-size: 1.5rem;
+    max-width: 80vw;
+}
+
+.passArea1 {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.generateBtn {
+    padding: 15px;
+    background-color: #DBE2EF;
+    border-radius: 10px;
+    border: 2px solid #3F72AF;
+    cursor: pointer;
+    color: #3F72AF;
+
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.generateBtn:hover {
+    background-color: #3F72AF;
+    color: #F9F7F7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F9F7F7;
+    min-height: 100vh;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.icon {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #112D4E;
+    text-align: center;
+    padding: 4rem;
+    color: #DBE2EF;
+    margin-top: auto;
+}
+
+.socialLink {
+    color: #DBE2EF;
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+}

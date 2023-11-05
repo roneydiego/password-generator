@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat&family=Cinzel&family=Libre+Baskerville&family=Playfair+Display&family=Poppins:wght@200&family=Roboto:ital,wght@0,300;0,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <section class="header">
+        <h1>Password <span class="makeItBlue">Generator</span></h1>
+        <div class="loginArea">
+            <a href="" class="login">Login</a>
+            <a href="" class="register">Register</a>
+        </div>
+    </section>
+    <div class="passArea1">
+        <div class="passArea">
+            <div class="password">
+                <p class="generatedPass">--</p>
+                <img class="copyClipboard" src="images/copy-svgrepo-com.svg">
+                <span class="copiedFeedback hidden">Copied!</span>
+            </div>
+            <div class="charOptions">
+                <div class="setPassLen">
+                    <input type="range" min="1" max="32" step="1" class="customRange">
+                    <label class="passLen">17</label>
+                </div>
+        
+                <div class="charTypes">
+                    <input class="checkbox" name="uppercase" type="checkbox" checked>
+                    <label for="uppercase">Uppercase</label>
+                    <input class="checkbox" name="lowercase" type="checkbox" checked>
+                    <label for="lowercase">Lowercase</label>
+                    <input class="checkbox" name="numbers" type="checkbox" checked>
+                    <label for="numbers">Numbers</label>
+                    <input class="checkbox" name="symbols" type="checkbox" checked>
+                    <label for="symbols">Symbols</label>   
+                </div>
+            </div>
+    
+            <button class="generateBtn">Generate</button>
+        </div>    
+    </div>
+
+    <section class="footer">
+        <div>
+            <footer>
+                <div class="social-media">
+                    <a class="socialLink" href="https://www.linkedin.com/in/roney-diego-14286a222/"><img class="icon" src="images/1820468_brand_linkedin_logo_network_social_icon.svg" alt="">LinkedIn</a>
+                    <a class="socialLink" href="https://www.instagram.com/r.ydiego/"><img class="icon" src="images/5340248_ig_instagram_photo_icon.svg" alt="">Instagram</a>
+                    <a class="socialLink" href="https://github.com/roneydiego"><img class="icon" src="images/853360_github_icon.svg" alt="">Github</a>
+                </div>
+                <br>Developed by Roney Diego © | 2023
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="index.js"></script>
+</body>
+</html>
