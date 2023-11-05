@@ -8,6 +8,11 @@ var charsAvailable = [];
 var passLength = 17;
 
 var sldr = $(".customRange");
+sldr.on("touchmove", function () {
+    passLength = sldr.val();
+    $(".passLen").text(passLength);
+});
+
 sldr.on("mousemove", function () {
     passLength = sldr.val();
     $(".passLen").text(passLength);
